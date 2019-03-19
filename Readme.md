@@ -6,7 +6,7 @@ This workshop aims to introduce participants to the main concepts of a Microserv
 
 During this lab you will deploy and use and number of Azure PaaS and Serverless services, you will create and deploy a number of microservices, configure and combine the services into a working end to end application. Finally you will look at how Azure Services can be used to make the application resilient and scalable.
 
-The application you will be building will allow the users to order a cup of coffee from a fictional coffee house called Microservices Cafe. A set of microservices comprising this Microservices Cafe application will capture the order via a RESTful API, simulate the process of making the order and finally dispatching the order by notifying the user via an SMS text message. 
+The application you will be building will allow the users to order a cup of coffee from a fictional coffee house called Microservices Cafe. A set of microservices comprising this Microservices Cafe application will capture the order via a [RESTful API](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design), simulate the process of making the order and finally dispatching the order by notifying the user via an SMS text message. 
 
 ## Core Technologies
 
@@ -18,3 +18,22 @@ The application you will be building will allow the users to order a cup of coff
 ## Architecture
 
 ![MicroservicesCafe.png](./images/MicroservicesCafe.png)
+
+## Pre-Reqs
+There are several things you will need before starting this lab:
+
+* Azure Subscription 
+Either an existing Azure subscription you have access to (with ‘contributor’ rights) or Azure Pass or free account.
+We will deploy an Azure Container Service (AKS) cluster however this is not necessarily an expensive service, and could easily run for several weeks in the credit provided by an Azure Pass
+If you activate an Azure Pass do not use your company/work email address
+
+* Visual Studio Code
+* Azure CLI
+
+## Lab Contents
+
+1. Deployig Service Bus Queues
+2. Cashier Service and Azure App Services
+3. Barista Service and Azure Functions
+4. Dispatcer Service and Azure Logic Apps
+5. Scaling and Resiliency  
