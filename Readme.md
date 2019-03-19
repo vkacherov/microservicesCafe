@@ -23,9 +23,8 @@ The application you will be building will allow the users to order a cup of coff
 There are several things you will need before starting this lab:
 
 * Azure Subscription 
-Either an existing Azure subscription you have access to (with ‘contributor’ rights) or Azure Pass or free account.
-We will deploy an Azure Container Service (AKS) cluster however this is not necessarily an expensive service, and could easily run for several weeks in the credit provided by an Azure Pass
-If you activate an Azure Pass do not use your company/work email address
+Either an existing Azure subscription you have access to (with ‘contributor’ rights) or Azure Pass or free account. 
+**Note:** If you activate an Azure Pass do not use your company/work email address
 
 * Visual Studio Code
 * Azure CLI
