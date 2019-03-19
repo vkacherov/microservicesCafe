@@ -32,7 +32,7 @@ Either an existing Azure subscription you have access to (with ‘contributor’
 ## Lab Contents
 
 1. Deployig Service Bus Queues
-2. Cashier Service and Azure App Services
-3. Barista Service and Azure Functions
-4. Dispatcer Service and Azure Logic Apps
+2. [Cashier Service and Azure App Services](./Labs/CashierService/Readme.md)
+3. [Barista Service and Azure Functions](./Labs/BaristaService/Readme.md)
+4. [Dispatcer Service and Azure Logic Apps](./Labs/DispatcherService/Readme.md)
 5. Scaling and Resiliency  
