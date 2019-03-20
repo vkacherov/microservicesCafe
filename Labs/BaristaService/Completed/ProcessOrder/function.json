@@ -1,0 +1,19 @@
+{
+  "disabled": false,
+  "bindings": [
+    {
+      "name": "pendingQueueMsg",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "queueName": "pendingordersqueue",
+      "connection": "microserviceCafe_SERVICEBUS"
+    },
+    {
+      "name": "completedQueue",
+      "type": "serviceBus",
+      "direction": "out",
+      "connection": "cashierServiceConnection",
+      "queueName": "completedordersqueue"
+    }
+  ]
+}
