@@ -6,13 +6,13 @@
       "type": "serviceBusTrigger",
       "direction": "in",
       "queueName": "pendingordersqueue",
-      "connection": "microserviceCafe_SERVICEBUS"
+      "connection": "ORDER_QUEUE_CONNECTION"
     },
     {
       "name": "completedQueue",
       "type": "serviceBus",
       "direction": "out",
-      "connection": "cashierServiceConnection",
+      "connection": "ORDER_QUEUE_CONNECTION",
       "queueName": "completedordersqueue"
     }
   ]
