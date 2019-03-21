@@ -1,0 +1,21 @@
+{
+  "disabled": false,
+  "bindings": [
+    {
+      "name": "completedOrderMsg",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "queueName": "completedordersqueue",
+      "connection": "ORDER_QUEUE_CONNECTION"
+    },
+    {
+      "type": "twilioSms",
+      "name": "message",
+      "accountSidSetting": "TwilioAccountSid",
+      "authTokenSetting": "TwilioAuthToken",
+      "from": "+18573080096",
+      "direction": "out",
+      "body": "Your order is ready!"
+    }
+  ]
+}
