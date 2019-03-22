@@ -4,7 +4,7 @@
  
 The Dispatcher Service consumes the "Completed Orders" queue and is responsible for notifiying the customers by sending an SMS text message. Each order in the completed queue should only be consumed and processed by a single Dispatcher.  
 
-![Dispatcher Service](./Images/DispatcherService.png =400x)
+![Dispatcher Service](./Images/DispatcherService.png =300x)
 
 ## Core Technologies
 
