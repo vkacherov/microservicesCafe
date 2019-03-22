@@ -53,4 +53,3 @@ In this lab we will use the Azure Logic App to implement the Dispatcher Service.
 
   - We can test the whole system by submitting a message to the Cashier Service. If everything is working as expected you should you recieve an SMS message notifying you that the order is complete.
   
-## Next Steps
