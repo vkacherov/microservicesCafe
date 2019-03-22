@@ -1,0 +1,17 @@
+/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api-tests/obj/Debug/netcoreapp2.2/CashierServicesTests.csprojAssemblyReference.cache
+/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api-tests/obj/Debug/netcoreapp2.2/CashierServicesTests.csproj.CoreCompileInputs.cache
+/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api-tests/obj/Debug/netcoreapp2.2/CashierServicesTests.AssemblyInfoInputs.cache
+/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api-tests/obj/Debug/netcoreapp2.2/CashierServicesTests.AssemblyInfo.cs
+/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api-tests/bin/Debug/netcoreapp2.2/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api-tests/bin/Debug/netcoreapp2.2/xunit.runner.reporters.netcoreapp10.dll
+/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api-tests/bin/Debug/netcoreapp2.2/xunit.runner.utility.netcoreapp10.dll
+/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api-tests/bin/Debug/netcoreapp2.2/CashierServicesTests.deps.json
+/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api-tests/bin/Debug/netcoreapp2.2/CashierServicesTests.runtimeconfig.json
+/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api-tests/bin/Debug/netcoreapp2.2/CashierServicesTests.runtimeconfig.dev.json
+/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api-tests/bin/Debug/netcoreapp2.2/CashierServicesTests.dll
+/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api-tests/bin/Debug/netcoreapp2.2/CashierServicesTests.pdb
+/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api-tests/bin/Debug/netcoreapp2.2/CashierServices.dll
+/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api-tests/bin/Debug/netcoreapp2.2/CashierServices.pdb
+/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api-tests/obj/Debug/netcoreapp2.2/CashierServicesTests.csproj.CopyComplete
+/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api-tests/obj/Debug/netcoreapp2.2/CashierServicesTests.dll
+/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api-tests/obj/Debug/netcoreapp2.2/CashierServicesTests.pdb

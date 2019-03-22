@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api-tests/CashierServicesTests.csproj",
+  "TargetFramework": "netcoreapp2.2",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}
