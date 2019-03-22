@@ -1,4 +1,4 @@
-<head><link rel="stylesheet" href="./css/styles.css"></head>
+<link rel="stylesheet" href="./css/styles.css">
 
 # Microservices Cafe
 
