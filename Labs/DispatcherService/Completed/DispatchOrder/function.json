@@ -13,7 +13,7 @@
       "name": "message",
       "accountSidSetting": "TwilioAccountSid",
       "authTokenSetting": "TwilioAuthToken",
-      "from": "+18573080096",
+      "from": "TwilioFromNumber",
       "direction": "out",
       "body": "Your order is ready!"
     }
