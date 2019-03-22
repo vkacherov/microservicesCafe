@@ -1,0 +1,14 @@
+/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api/bin/Debug/netcoreapp2.2/CashierService.deps.json
+/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api/bin/Debug/netcoreapp2.2/CashierService.runtimeconfig.json
+/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api/bin/Debug/netcoreapp2.2/CashierService.runtimeconfig.dev.json
+/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api/bin/Debug/netcoreapp2.2/CashierService.dll
+/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api/bin/Debug/netcoreapp2.2/CashierService.pdb
+/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api/obj/Debug/netcoreapp2.2/CashierService.csprojAssemblyReference.cache
+/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api/obj/Debug/netcoreapp2.2/CashierService.csproj.CoreCompileInputs.cache
+/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api/obj/Debug/netcoreapp2.2/CashierService.RazorAssemblyInfo.cache
+/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api/obj/Debug/netcoreapp2.2/CashierService.RazorAssemblyInfo.cs
+/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api/obj/Debug/netcoreapp2.2/CashierService.AssemblyInfoInputs.cache
+/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api/obj/Debug/netcoreapp2.2/CashierService.AssemblyInfo.cs
+/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api/obj/Debug/netcoreapp2.2/CashierService.RazorTargetAssemblyInfo.cache
+/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api/obj/Debug/netcoreapp2.2/CashierService.dll
+/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api/obj/Debug/netcoreapp2.2/CashierService.pdb
