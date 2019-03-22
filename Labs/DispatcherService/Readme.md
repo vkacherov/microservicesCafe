@@ -4,7 +4,7 @@
 
 The Dispatcher Service consumes the "Completed Orders" queue and is responsible for notifiying the customers by sending an SMS text message. Each order in the completed queue should only be consumed and processed by a single Dispatcher.  
 
-![Dispatcher Service](./Images/DispatcherService.png =300x)
+<img src="./Images/DispatcherService.png" width="300px"/>
 
 ## Core Technologies
 
@@ -29,7 +29,7 @@ The Dispatcher Service consumes the "Completed Orders" queue and is responsible 
 In this lab we will use the Azure Logic App to implement the Dispatcher Service. Azure Logic Apps is a cloud service that helps you automate and orchestrate tasks, business processes, and workflows.
 
 1. Begin by navigating to the [Azure portal]('https://portal.azure.com') and sign in.
-2. Onced in the portal, click on the Create Resource button ![createResourcePlus](./Images/createResourcePlus.png =30x) in the left-side control panel.
+2. Onced in the portal, click on the Create Resource button &nbsp;<img src="./Images/createResourcePlus.png" width="20px"/>&nbsp;  in the left-side control panel.
 3. Type in "Logic App" in the search field and click enter. Click the "Create" button at the bottom of the Logic App blade and fillout the required fields: Name, Subscription, Resource Group (select "Use Existing" to keep all lab resource together) and Location and click create.
    
 <img src="./Images/createLogicApp.gif" width="100%"/>
