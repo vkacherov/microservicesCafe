@@ -1,3 +1,5 @@
+<head><link rel="stylesheet" href="./css/styles.css"></head>
+
 # Microservices Cafe
 
 ## Introduction
@@ -39,6 +41,4 @@ Either an existing Azure subscription you have access to (with ‘contributor’
 
 <a href="./Labs/DispatcherService/Readme.md" class="myButton">4. Dispatcer Service and Azure Logic Apps</a>
 
-<a href="./Labs/DispatcherService/Readme.md" class="myButton">5. Dispatcer Service and Azure Logic Apps</a>
-
-<link rel="stylesheet" href="./css/styles.css">
+<a href="#" class="myButton">5. Scaling and Resiliency</a>
