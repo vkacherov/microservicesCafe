@@ -3,15 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using CashierServices.Contracts;
 using CashierServices.Models;
+using Microsoft.Extensions.Options;
 
 namespace CashierServicesTests
 {
     class CashierServiceFake : ICashierService
     {
         private readonly List<Order> _cashierService;
+        IOptions<ApplicationSettings> _settings;
 
-        public CashierServiceFake()
+        public CashierServiceFake(IOptions<ApplicationSettings> settings)
         {
+            _settings = settings ?? throw new ArgumentNullException(nameof(_settings));
+
             _cashierService = new List<Order>()
             {
                 new Order() { orderid = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c200"),

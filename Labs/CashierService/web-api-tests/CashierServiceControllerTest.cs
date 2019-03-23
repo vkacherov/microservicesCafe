@@ -6,6 +6,12 @@ using CashierServices.Controllers;
 using CashierServices.Models;
 using CashierServices.Contracts;
 using System.Linq;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Configuration.Json;
+using System.IO;
+
 
 namespace CashierServicesTests
 {
@@ -13,11 +19,22 @@ namespace CashierServicesTests
     {
         CashierServiceController _controller;
         ICashierService _service;
+        IOptions<ApplicationSettings> _settings;
+        IMessageQueueService _messageQueue;
 
         public CashierServiceControllerTest()
         {
-            _service = new CashierServiceFake();
-            _controller = new CashierServiceController(_service);
+            var configuration = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json", false)
+                .Build();
+
+            _settings = Options.Create(configuration.GetSection("ApplicationSettings").Get<ApplicationSettings>());
+            
+            _service = new CashierServiceFake(_settings);
+            _messageQueue = new MessageQueueServiceFake();
+
+            _controller = new CashierServiceController(_service, _messageQueue, _settings);
         }
 
         [Fact]
