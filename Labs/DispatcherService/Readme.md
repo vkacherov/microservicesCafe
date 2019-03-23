@@ -7,15 +7,15 @@
 
 ## Core Technologies
 
-* Azure Service Bus
-* Azure Logic Apps
-* Twillio
+* <a href="https://docs.microsoft.com/en-us/azure/service-bus-messaging">Azure Service Bus</a>
+* <a href="https://docs.microsoft.com/en-us/azure/logic-apps">Azure Logic Apps</a>
+* <a href="https://www.twilio.com">Twillio</a>
 
 ## Prerequisites
 
-* [Twilio]('https://www.twilio.com/) Account
+* Twilio Account
   
-  * You will need a Twilio account ID and authentication token, which you can find on your Twilio dashboard
+  * You will need a <a href='https://www.twilio.com/'>Twilio account</a> ID and authentication token, which you can find on your Twilio dashboard
 
   * Your credentials authorize your logic app to create a connection and access your Twilio account from your logic app. If you're using a Twilio trial account, you can send SMS only to verified phone numbers.
 
@@ -42,7 +42,7 @@ In this lab we will use the Azure Logic App to implement the Dispatcher Service.
     {
         "name": "Joe",
         "phone": "(123)345-6789",
-        "status": "PENDING"
+        "status": "COMPLETED"
     }
   ```
   - Add a task for Sending a text message and use the Dynamic Content to inject name and phone number.
