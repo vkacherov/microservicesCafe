@@ -1,5 +1,5 @@
 {
-    name: "Joe",
-    phone: "(123)345-6789",
-    status: "PENDING"
+    "name": "Joe",
+    "phone": "(123)345-6789",
+    "status": "PENDING"
 }

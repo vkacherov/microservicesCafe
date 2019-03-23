@@ -1,10 +1,9 @@
+
 # Dispatcher Service
 
-## Overview
-
-The Dispatcher Service consumes the "Completed Orders" queue and is responsible for notifiying the customers by sending an SMS text message. Each order in the completed queue should only be consumed and processed by a single Dispatcher.  
-
-![Dispatcher Service](./Images/DispatcherService.png =300x)
+ <img src="./Images/DispatcherService.png" width="300px"/> 
+  
+  The Dispatcher Service consumes the "Completed Orders" queue and is responsible for notifiying the customers by sending an SMS text message. Each order in the completed queue should only be consumed and processed by a single Dispatcher.
 
 ## Core Technologies
 
@@ -24,13 +23,31 @@ The Dispatcher Service consumes the "Completed Orders" queue and is responsible 
 
   * A verified Twilio phone number that can receive SMS
   
-## Implementation
+## Step-by-step 
 
 In this lab we will use the Azure Logic App to implement the Dispatcher Service. Azure Logic Apps is a cloud service that helps you automate and orchestrate tasks, business processes, and workflows.
 
-1. Begin by navigating to the [Azure portal]('https://portal.azure.com') and sign in.
-2. Onced in the portal, click on the Create Resource button ![createResourcePlus](./Images/createResourcePlus.png =50x) in the left-side control panel.
-3. Type in "Logic App" in the search field and click enter. ![](./Images/createResourceLA.png =400x)
-4. Click the "Create" button at the bottom of the Logic App blade. ![](./Images/createResourceLACreate.png =400x)
-5. Fillout the required fields: Name, Subscription, Resource Group (select "Use Existing" to keep all lab resource together) and Location and click create. ![](./Images/newLA.png =400x)
-6. Select "When a messge is received in a Service Bus queue" card on the Logic Apps Designer screen. ![](./Images/newLAStart.png =400x)
+- Begin by navigating to the [Azure portal]('https://portal.azure.com') and sign in.
+- Onced in the portal, click on the Create Resource button &nbsp;<img src="./Images/createResourcePlus.png" width="20px"/>&nbsp;  in the left-side control panel.
+- Type in "Logic App" in the search field and click enter. Click the "Create" button at the bottom of the Logic App blade and fillout the required fields: Name, Subscription, Resource Group (select "Use Existing" to keep all lab resource together) and Location and click create.
+   
+<img src="./Images/createLogicApp.gif" width="100%"/>
+
+- Now that we have a Logic App, let's create a flow that will be triggered by a new message arriving in the "CompletedOrdersQueue" and send an SMS message to the user.  
+  - Select "When a messge is received in a Service Bus queue" card on the Logic Apps Designer screen. 
+  - Configure the Service Bus connector task by selecting the "completedordersqueue" from dropdown and changing the polling time to 3 seconds.
+  - Add a task to decode and parse the Service Bus message by searching for "Parse JSON" and adding "Dynamic Content" Expression of `base64toString(Content)`
+  - Add the schema by using the following sample payload
+  ```
+    {
+        "name": "Joe",
+        "phone": "(123)345-6789",
+        "status": "PENDING"
+    }
+  ```
+  - Add a task for Sending a text message and use the Dynamic Content to inject name and phone number.
+  - Click Save, your Logic App Flow is now ready to process requests.  
+<img src="./Images/createLogicAppFlow.gif" width="100%"/>
+
+  - We can test the whole system by submitting a message to the Cashier Service. If everything is working as expected you should you recieve an SMS message notifying you that the order is complete.
+  
