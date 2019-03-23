@@ -18,25 +18,39 @@ namespace CashierServices
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public IConfiguration Configuration { get; }
+        
+        public Startup(IConfiguration configuration, IHostingEnvironment env)
         {
             Configuration = configuration;
-        }
 
-        public IConfiguration Configuration { get; }
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(env.ContentRootPath)
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
+                .AddEnvironmentVariables();
+            
+            Configuration = builder.Build();
+        }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<ICashierService, CashierService>();
-
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddOptions();
+            
+            services.Configure<ApplicationSettings>(Configuration.GetSection("ApplicationSettings"));
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new Info { Title = "Microservice Cafe Cashier Service", Version = "v1" });
+                c.SwaggerDoc("v1", new Info { Title = "Microservice Cafe Cashier Services", Version = "v1" });
             });
+
+            services.AddScoped<IMessageQueueService, MessageQueueService>();
+            services.AddScoped<ICashierService, CashierService>();
         }
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -58,7 +72,7 @@ namespace CashierServices
             // specifying the Swagger JSON endpoint.
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Cashier Service V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Cashier Services V1");
             });
 
             app.UseHttpsRedirection();
