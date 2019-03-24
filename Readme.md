@@ -29,7 +29,7 @@ Either an existing Azure subscription you have access to (with ‘contributor’
 * Visual Studio Code
 * Azure CLI
 
-## Lab Contents
+## Hands-on Labs
 
 * <a href="./Labs/DeployQueues/Readme.md" class="myButton" style="disabled">Deploy Service Bus Queues</a>
 
