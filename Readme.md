@@ -17,7 +17,7 @@ The application you will be building will allow the users to order a cup of coff
 
 ## Architecture
 
-![MicroservicesCafeShort.png](./Images/MicroservicesCafe.png)
+![MicroservicesCafeShort.png](./Images/MicroservicesCafeShort.png)
 
 ## Pre-Reqs
 There are several things you will need before starting this lab:
