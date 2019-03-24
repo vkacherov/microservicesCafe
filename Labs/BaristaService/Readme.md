@@ -91,4 +91,20 @@ Next we will add the configuration for the "Completed Orders" queue:
 
 * Test your function locally by submitting orders to the Cashier Service and monitoring the "Completed Orders" queue. There are a few ways to monitor the queue, you can either open the Service Bus Queue overview page in the [Azure portal](https://portal.azure.com) or use a [Service Bus Explorer](https://github.com/paolosalvatori/ServiceBusExplorer) tool (Windows only).
 
-* Once the Barista Service is working locally as expected, we are ready to deploy it to Azure 
+* Once the Barista Service is working locally as expected, we are ready to deploy it to Azure.
+* Make sure your code is all checked into Git
+
+<img src="./Images/gitCommit.png" width="100%"/>
+
+* In VS Code, Bring up the command palette (Ctrl+Shift+P) and type "Functions", select "Deploy to Function App" and select folder containing the function code. 
+* Select an existing Function App in Azure or click "+ Create New Function App" if you don't have one yet
+* Set the language to JavaScript and runtime to Azure Functions v2 (.NET Standard) and click "Deploy". You can see the the deploy logs in the Output tab in VS Code (should popup by default).
+* Once the Function has been deployed, you will be prompted to Stream Logs to VS Code, you will need to aggree to enable Application Logging, click "Yes".
+
+<img src="./Images/azureFunctionDeploy.gif" width="100%"/>
+
+* Well Done! Your Barista Service is now deployed to Azure and is ready to process orders. Test the service the same way we tested a local deployment.
+
+## Next Steps
+
+* <a href="./Labs/DispatcherService/Readme.md" class="myButton">Dispatcer Service and Azure Logic Apps</a>
