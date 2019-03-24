@@ -107,4 +107,4 @@ Next we will add the configuration for the "Completed Orders" queue:
 
 ## Next Steps
 
-* <a href="./Labs/DispatcherService/Readme.md" class="myButton">Dispatcer Service and Azure Logic Apps</a>
+* <a href="/Labs/DispatcherService/Readme.md" class="myButton">Dispatcer Service and Azure Logic Apps</a>
