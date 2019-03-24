@@ -7,6 +7,7 @@
 ## Core Technologies
 
 * <a href="https://docs.microsoft.com/en-us/azure/service-bus-messaging">Azure Service Bus</a>
+* <a href="https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest">Azure CLI</a>
   
 ## Step-by-step 
 

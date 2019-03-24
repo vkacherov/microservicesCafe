@@ -10,10 +10,10 @@ The application you will be building will allow the users to order a cup of coff
 
 ## Core Technologies
 
-* Azure App Service (PaaS)
-* Azure Functions (Serverless)
-* Azure Logic Apps (Serverless)
-* Azure Service Bus (PaaS)
+* <a href="https://docs.microsoft.com/en-us/azure/app-service">Azure App Services</a>
+* <a href="https://docs.microsoft.com/en-us/azure/azure-functions/">Azure Functions</a>
+* <a href="https://docs.microsoft.com/en-us/azure/logic-apps">Azure Logic Apps</a>
+* <a href="https://docs.microsoft.com/en-us/azure/service-bus-messaging">Azure Service Bus</a>
 
 ## Architecture
 
