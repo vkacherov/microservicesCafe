@@ -17,7 +17,7 @@ The application you will be building will allow the users to order a cup of coff
 
 ## Architecture
 
-![MicroservicesCafe.png](./Images/MicroservicesCafe.png)
+![MicroservicesCafeShort.png](./Images/MicroservicesCafe.png)
 
 ## Pre-Reqs
 There are several things you will need before starting this lab:
@@ -31,12 +31,12 @@ Either an existing Azure subscription you have access to (with ‘contributor’
 
 ## Lab Contents
 
-<a href="#" class="myButton" style="disabled">1. Deploy Service Bus Queues</a>
+* <a href="./Labs/DeployQueues/Readme.md" class="myButton" style="disabled">Deploy Service Bus Queues</a>
 
-<a href="./Labs/CashierService/Readme.md" class="myButton">2. Cashier Service and Azure App Services</a>
+* <a href="./Labs/CashierService/Readme.md" class="myButton">Cashier Service and Azure App Services</a>
 
-<a href="./Labs/BaristaService/Readme.md" class="myButton">3. Barista Service and Azure Functions</a>
+* <a href="./Labs/BaristaService/Readme.md" class="myButton">Barista Service and Azure Functions</a>
 
-<a href="./Labs/DispatcherService/Readme.md" class="myButton">4. Dispatcer Service and Azure Logic Apps</a>
+* <a href="./Labs/DispatcherService/Readme.md" class="myButton">Dispatcer Service and Azure Logic Apps</a>
 
-<a href="#" class="myButton">5. Scaling and Resiliency</a>
+* <a href="./Labs/OptionalExersices/Readme.md" class="myButton">Optional Exercises</a>
