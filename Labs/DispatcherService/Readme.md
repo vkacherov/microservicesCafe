@@ -53,4 +53,4 @@ In this lab we will use the Azure Logic App to implement the Dispatcher Service.
   
 ## Next Steps
 
-* <a href="/Labs/optionalExercises/Readme.md" class="myButton">Optional Exercises</a>
+* <a href="/Labs/OptionalExercises/Readme.md" class="myButton">Optional Exercises</a>
