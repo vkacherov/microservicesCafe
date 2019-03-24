@@ -35,6 +35,60 @@ Begin by opening the Visual Studio Code in an empty directory. Bring up the comm
 
 <img src="./Images/createFunction.gif" width="100%"/>
 
-We now have a basic function that will be triggered when there are new messages added to the "Panding Orders" queue. You can test your function by running it locally in the VS Code:
+* We now have a basic function that will be triggered when there are new messages added to the "Panding Orders" queue. You can test your function by running it locally in the VS Code:
 
-<img src="./Images/vscodeFunctionDebug.png" width="100%"/>>
+<img src="./Images/vscodeFunctionDebug.png" width="100%"/>
+
+Next we will add the configuration for the "Completed Orders" queue:
+* Open `function.json` file and add a new binding as follows
+  ```
+  {
+      "name": "completedQueue",
+      "type": "serviceBus",
+      "direction": "out",
+      "connection": "ORDER_QUEUE_CONNECTION",
+      "queueName": "completedordersqueue"
+  }
+  ```
+  *Note: Since we are using the same Service Bus for both queues ("completed" and "pending" orders), the connection setting will be the same for both.*
+* We also need to configure the Service Bus trigger to immediately mark as complete. Open the `host.json` file and make sure `autoComplete: true`. Your file should look like this:
+  ```
+  {
+    "version": "2.0",
+    "extensions": {
+          "serviceBus": {
+              "prefetchCount": 100,
+              "messageHandlerOptions": {
+                  "autoComplete": true,
+                  "maxConcurrentCalls": 32,
+                  "maxAutoRenewDuration": "00:55:00"
+              }
+          }
+      }
+  }
+  ```
+* Now, let's add some logic to our Barista Service. Open the `index.js` and add some code to process the order, your file should look like the following:
+
+  ```javascript
+  module.exports = async function(context, pendingQueueMsg) {
+      context.log('JavaScript ServiceBus queue trigger function processed message', pendingQueueMsg);
+
+      //
+      // The service logic is here 
+      // For now just set the staus to completed and drop it in the completed queue
+      //
+      if( pendingQueueMsg ) {
+          // Wait for 5s to simulate barista doing some work
+          let sleep = ms => new Promise( resolve => setTimeout(resolve, ms));
+          await sleep(5000);
+
+          pendingQueueMsg.status = "COMPLETED";
+          context.log('Order completed, writing to completed orders queue: '+ JSON.stringify(pendingQueueMsg));
+          context.bindings.completedQueue = pendingQueueMsg;
+      }
+  };
+  ```
+
+* Test your function locally by submitting orders to the Cashier Service and monitoring the "Completed Orders" queue. There are a few ways to monitor the queue, you can either open the Service Bus Queue overview page in the [Azure portal](https://portal.azure.com) or use a [Service Bus Explorer](https://github.com/paolosalvatori/ServiceBusExplorer) tool (Windows only).
+
+* Once the Barista Service is working locally as expected, we are ready to deploy it to Azure 
