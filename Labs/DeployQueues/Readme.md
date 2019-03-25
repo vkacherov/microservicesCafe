@@ -11,7 +11,7 @@
   
 ## Step-by-step 
 
-* We will using the Azure CLI to create the required Azure resources. Using your favorite shell (PowerShell, Bash, ...etc), verify that the Azure CLI is installed by running 
+* We will using the Azure CLI to create the required Azure resources. Using your favorite shell (PowerShell, Bash, Cloud Shell, ...etc), verify that the Azure CLI is installed by running 
   ```
   az version
   ```
