@@ -10653,11 +10653,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api-tests/CashierServicesTests.csproj",
+      "projectUniqueName": "/Users/tbaggs/Documents/Source/MicroservicesCafe.orig/MicroservicesCafe/Labs/CashierService/web-api-tests/CashierServicesTests.csproj",
       "projectName": "CashierServicesTests",
-      "projectPath": "/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api-tests/CashierServicesTests.csproj",
+      "projectPath": "/Users/tbaggs/Documents/Source/MicroservicesCafe.orig/MicroservicesCafe/Labs/CashierService/web-api-tests/CashierServicesTests.csproj",
       "packagesPath": "/Users/tbaggs/.nuget/packages/",
-      "outputPath": "/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api-tests/obj/",
+      "outputPath": "/Users/tbaggs/Documents/Source/MicroservicesCafe.orig/MicroservicesCafe/Labs/CashierService/web-api-tests/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -10674,8 +10674,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api/CashierServices.csproj": {
-              "projectPath": "/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api/CashierServices.csproj"
+            "/Users/tbaggs/Documents/Source/MicroservicesCafe.orig/MicroservicesCafe/Labs/CashierService/web-api/CashierServices.csproj": {
+              "projectPath": "/Users/tbaggs/Documents/Source/MicroservicesCafe.orig/MicroservicesCafe/Labs/CashierService/web-api/CashierServices.csproj"
             }
           }
         }

@@ -12817,11 +12817,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api/CashierServices.csproj",
+      "projectUniqueName": "/Users/tbaggs/Documents/Source/MicroservicesCafe.orig/MicroservicesCafe/Labs/CashierService/web-api/CashierServices.csproj",
       "projectName": "CashierServices",
-      "projectPath": "/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api/CashierServices.csproj",
+      "projectPath": "/Users/tbaggs/Documents/Source/MicroservicesCafe.orig/MicroservicesCafe/Labs/CashierService/web-api/CashierServices.csproj",
       "packagesPath": "/Users/tbaggs/.nuget/packages/",
-      "outputPath": "/Users/tbaggs/Documents/Source/MicroservicesCafe/Labs/CashierService/web-api/obj/",
+      "outputPath": "/Users/tbaggs/Documents/Source/MicroservicesCafe.orig/MicroservicesCafe/Labs/CashierService/web-api/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
