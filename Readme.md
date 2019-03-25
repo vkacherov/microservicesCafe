@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="./css/styles.css">
-
 # Microservices Cafe
 
 ## Introduction
@@ -12,14 +10,14 @@ The application you will be building will allow the users to order a cup of coff
 
 ## Core Technologies
 
-* Azure App Service (PaaS)
-* Azure Functions (Serverless)
-* Azure Logic Apps (Serverless)
-* Azure Service Bus (PaaS)
+* <a href="https://docs.microsoft.com/en-us/azure/app-service">Azure App Services</a>
+* <a href="https://docs.microsoft.com/en-us/azure/azure-functions/">Azure Functions</a>
+* <a href="https://docs.microsoft.com/en-us/azure/logic-apps">Azure Logic Apps</a>
+* <a href="https://docs.microsoft.com/en-us/azure/service-bus-messaging">Azure Service Bus</a>
 
 ## Architecture
 
-![MicroservicesCafe.png](./Images/MicroservicesCafe.png)
+![MicroservicesCafeShort.png](./Images/MicroservicesCafeShort.png)
 
 ## Pre-Reqs
 There are several things you will need before starting this lab:
@@ -31,14 +29,14 @@ Either an existing Azure subscription you have access to (with ‘contributor’
 * Visual Studio Code
 * Azure CLI
 
-## Lab Contents
+## Hands-on Labs
 
-<a href="#" class="myButton" style="disabled">1. Deploy Service Bus Queues</a>
+* <a href="./Labs/DeployQueues/Readme.md" class="myButton" style="disabled">Deploy Service Bus Queues</a>
 
-<a href="./Labs/CashierService/Readme.md" class="myButton">2. Cashier Service and Azure App Services</a>
+* <a href="./Labs/CashierService/Readme.md" class="myButton">Cashier Service and Azure App Services</a>
 
-<a href="./Labs/BaristaService/Readme.md" class="myButton">3. Barista Service and Azure Functions</a>
+* <a href="./Labs/BaristaService/Readme.md" class="myButton">Barista Service and Azure Functions</a>
 
-<a href="./Labs/DispatcherService/Readme.md" class="myButton">4. Dispatcer Service and Azure Logic Apps</a>
+* <a href="./Labs/DispatcherService/Readme.md" class="myButton">Dispatcer Service and Azure Logic Apps</a>
 
-<a href="#" class="myButton">5. Scaling and Resiliency</a>
+* <a href="./Labs/OptionalExersices/Readme.md" class="myButton">Optional Exercises</a>
