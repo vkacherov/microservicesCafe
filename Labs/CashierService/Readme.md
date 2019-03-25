@@ -1,4 +1,3 @@
-
 # Cashier Service
 
  <img src="./Images/CashierService.png" width="300px" /> 
@@ -39,11 +38,53 @@ In this lab we will build and deploy the Cashier Service to an Azure Web App.
 <img src="./Images/Screen2.png" width="600px"/>
 
 * Next, we'll add local settings files to allow for local debugging.
+	* In VSCode, add the following 2 files to the CashierService web-api
+		* appsettings.json
+		* appsettings.Development.json
 
+* Open the appsettings.json file and insert the following json:
+```json
+    {
+      "ApplicationSettings": {
+        "ServiceBusConnection": "PASTE SERVICE BUS CONNECTION STRING HERE",
+        "QueueName": "PASTE SERVICE BUS QUEUE NAME HERE"
+      },
+      "Logging": {
+        "LogLevel": {
+          "Default": "Warning"
+        }
+      },
+      "AllowedHosts": "*"
+    }
+```
 
+    * Open the appsettings.Development.json file and insert the following json:
+  
+```json
+    {
+       "Logging": {
+    	   "LogLevel": {
+	    	"Default": "Debug",
+    		"System": "Information",
+    		"Microsoft": "Information"
+	    }
+	}
+    }
+```
 
+* Now we need to replace our queue connection information with a Shared Access connection string from Azure Service Bus.  The creation of the Azure Service Bus Queues should have been completed in the Hands-on-Lab for <a href="./Labs/DeployQueues/Readme.md">Deploy Service Bus Queues</a> 
 
-Add appsettings.json & appsettings.Development.json
+<img src="./Images/Screen3.png" width="600px"/>
+
+* Create a Shared access policy with Send claims and copy the connection string to your appsettings.json file.
+
+* In the settings.json file, replace the QueueName with `pendingordersqueue`
+
+* If all went well, you should be able to hit F5 and launch the api.  From the swagger screen you can post a new order to the service.
+
+<img src="./Images/Screen4.png" width="600px"/>
+
+## Deploying to Azure
 
 ## Next Steps
 
