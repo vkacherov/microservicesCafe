@@ -2,7 +2,7 @@
 
  <img src="./Images/DeployQueues.png" width="500px"/> 
   
-  The Microservice Cafe implentation follows a microservices architecture and utilizes Azure Service Bus Queues to exchange messages through out the different services.
+  The Microservice Cafe implentation follows a microservices architecture and utilizes Azure Service Bus Queues to exchange messages between the different services.
 
 ## Core Technologies
 
