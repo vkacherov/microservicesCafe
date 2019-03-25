@@ -1,7 +1,7 @@
 
 # Cashier Service
 
- <img src="./Images/CashierService.png" width="300px/> 
+ <img src="./Images/CashierService.png" width="300px" /> 
   
   The Cashier Service is responisble for recieving orders via a RESTful API endpoint `[POST]/api/CashierService` and storing the received orders in the "Pending Orders" queue. Each order in the pending queue should only be consumed and processed by a single Barista Service. 
   The order message will adhere to the following minimum schema:
