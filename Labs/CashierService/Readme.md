@@ -59,7 +59,7 @@ In this lab we will build and deploy the Cashier Service to an Azure Web App.
     }
 ```
 
-    * Open the appsettings.Development.json file and insert the following json:
+   * Open the appsettings.Development.json file and insert the following json:
   
 ```json
     {
@@ -118,7 +118,7 @@ In this section we'll deploy our newly created service to a new Azure Web App.
 
 	<img src="./Images/Screen6.png" width="400px"/>
 
-## Next Step
+## Next Steps
 
 * <a href="/Labs/BaristaService/Readme.md" class="myButton">Barista Service and Azure Functions</a>
   
