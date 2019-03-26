@@ -1,0 +1,26 @@
+<div class="container" [hidden]="submitted">
+    <h1>Order Form</h1>
+    <form (ngSubmit)="onSubmit()" #orderForm="ngForm">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" required
+         [(ngModel)]="model.name" name="name">
+      </div>
+
+      <div class="form-group">
+        <label for="alterEgo">Phone</label>
+        <input type="text" class="form-control" id="phone"
+          [(ngModel)]="model.phone" name="phone">
+      </div>
+
+      <button type="submit" class="btn btn-success" [disabled]="!orderForm.form.valid">Submit</button>
+
+    </form>
+</div>
+
+<div class="container" [hidden]="!submitted">
+  <h2>{{ returnMsg }}</h2>
+  
+  <br>
+  <button class="btn btn-primary" (click)="submitted=false">Continue</button>
+</div>
