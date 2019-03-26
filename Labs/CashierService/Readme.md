@@ -16,10 +16,11 @@
 * <a href="https://docs.microsoft.com/en-us/azure/service-bus-messaging">Azure Service Bus</a>
 * <a href="https://docs.microsoft.com/en-us/azure/app-service">Azure App Services</a>
 * <a href="https://docs.microsoft.com/en-us/dotnet/core/whats-new/dotnet-core-2-2">.Net Core 2.2</a>
-* <a href="https://swagger.io/">OpenAPI</a>
+* <a href="https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-2.2&tabs=visual-studio">Swashbuckle for OpenAPI</a>
 
 ## Prerequisites
 
+* <a href="https://azure.microsoft.com/en-us/free/">Azure Subscription</a>
 * <a href="https://code.visualstudio.com/download">Visual Studio Code</a>
 * <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account">Azure Account Extension for VSCode</a>
 * <a href="https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice">Azure App Service Extension for VSCode</a>
@@ -95,13 +96,36 @@ In this section we'll deploy our newly created service to a new Azure Web App.
 * Create the web app.
 
 	``` az webapp create --name CashierService{initials} --resource-group microservicescafe --plan CashierServicePlan -l ```
+	*Note the -l parameter in this command.  This option will enable local git deploy which is what we'll be doing for this lab.  For production use, it is recommended to use a DevOps platform for deployment.
 
 
-Add instructions for updating application settings
-- ApplicationSettings:QueueName
-- ApplicationSettings:ServiceBusConnection
+* If you encounter a deployment error due to CPU timeout, start your deployment again. 
 
-## Next Steps
+* Before we deploy our application, we need to set two application settings in our new Web App.  
+	* Expand your Web App in Visual Studio Code.  You may need to refresh your subscription first if it doesn't appear.
+	* Under Application Settings, add the following two keys with their corresponding values that we used earlier in our local appsettings.json file.
+
+	```ApplicationSettings:QueueName```
+	```ApplicationSettings:ServiceBusConnection```
+
+	<img src="./Images/Screen5.png" width="500px"/>
+
+* We are now ready to deploy our app to Azure. From Visual Studio Code, select the Azure App Service you are going to deploy to and then select the up arrow to begin the deployment.
+
+	<img src="./Images/DeployToAzure.gif" width="500px"/>
+
+* Once deployment is complete you will receive a confirmation in the bottom right hand side of Visual Studio Code similar to image below.  Select Browse Website to verify.  Make sure to include /swagger on the URL in order to get to the Swagger landing page.
+
+	<img src="./Images/Screen6.png" width="400px"/>
+
+## Next Step
 
 * <a href="/Labs/BaristaService/Readme.md" class="myButton">Barista Service and Azure Functions</a>
   
+
+
+
+
+
+
+
