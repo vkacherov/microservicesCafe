@@ -19,7 +19,7 @@ namespace CashierServices
 
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
-                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
                 .AddEnvironmentVariables();
             
@@ -67,6 +67,7 @@ namespace CashierServices
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Cashier Services V1");
             });
+
 
             app.UseHttpsRedirection();
             app.UseMvc();

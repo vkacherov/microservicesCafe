@@ -8,10 +8,7 @@ using CashierServices.Contracts;
 using System.Linq;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Configuration.Json;
 using System.IO;
-
 
 namespace CashierServicesTests
 {
@@ -36,6 +33,7 @@ namespace CashierServicesTests
 
             _controller = new CashierServiceController(_service, _messageQueue, _settings);
         }
+
 
         [Fact]
         public void Get_WhenCalled_ReturnsOkResult()
