@@ -100,7 +100,8 @@ In this section we'll deploy our newly created service to a new Azure Web App.  
 * Create the web app.
 
 	``` az webapp create --name CashierService{initials} --resource-group microservicescafe --plan CashierServicePlan -l ```
-	*Note the -l parameter in this command.  This option will enable local git deploy which is what we'll be doing for this lab.  For production use, it is recommended to use a DevOps platform for deployment.
+	
+	* Note the -l parameter in this command.  This option will enable local git deploy which is what we'll be doing for this lab.  For production use, it is recommended to use a DevOps platform for deployment.
 
 
 * If you encounter a deployment error due to CPU timeout, start your deployment again. 
