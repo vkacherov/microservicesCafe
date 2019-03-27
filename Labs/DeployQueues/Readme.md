@@ -19,6 +19,10 @@
   ```
   az login
   ```
+ * If you have more than one subscription, the command below will allow you to set a specific subscription to deploy new resources.
+   ```
+   az account set --subscription {subscription id or name}
+   ```
 * Create the resource group that we will use to group all resources in this lab
   ```
   az group create -n microservicescafe -l eastus
