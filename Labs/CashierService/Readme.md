@@ -75,7 +75,7 @@ In this lab we will build and deploy the Cashier Service to an Azure Web App.
 
 * Now we need to replace our queue connection information with a Shared Access connection string from Azure Service Bus.  The creation of the Azure Service Bus Queues should have been completed in the Hands-on-Lab for <a href="./Labs/DeployQueues/Readme.md">Deploy Service Bus Queues</a> 
 
-<img src="./Images/Screen2.png" width="600px"/>
+<img src="./Images/Screen3.png" width="600px"/>
 
 * Create a Shared access policy with Send claims and copy the connection string to your appsettings.json file.
 
