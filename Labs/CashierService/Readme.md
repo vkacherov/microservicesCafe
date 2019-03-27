@@ -91,7 +91,7 @@ In this lab we will build and deploy the Cashier Service to an Azure Web App.
 
 ## Deploying to Azure
 
-In this section we'll deploy our newly created service to a new Azure Web App.
+In this section we'll deploy our newly created service to a new Azure Web App.  We will be using the Azure CLI for this exercise.  It is also possible to perform this operation from the Azure Portal.
 
 * Create an App Service plan in the FREE tier.
 
