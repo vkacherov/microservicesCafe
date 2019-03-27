@@ -103,9 +103,6 @@ In this section we'll deploy our newly created service to a new Azure Web App.  
 	
 	* Note the -l parameter in this command.  This option will enable local git deploy which is what we'll be doing for this lab.  For production use, it is recommended to use a DevOps platform for deployment.
 
-
-* If you encounter a deployment error due to CPU timeout, start your deployment again. 
-
 * Before we deploy our application, we need to set two application settings in our new Web App.  
 	* Expand your Web App in Visual Studio Code.  You may need to refresh your subscription first if it doesn't appear.
 	* Under Application Settings, add the following two keys with their corresponding values that we used earlier in our local appsettings.json file.
@@ -118,6 +115,8 @@ In this section we'll deploy our newly created service to a new Azure Web App.  
 * We are now ready to deploy our app to Azure. From Visual Studio Code, select the Azure App Service you are going to deploy to and then select the up arrow to begin the deployment.
 
 	<img src="./Images/DeployToAzure.gif" width="500px"/>
+
+	* If you encounter a deployment error due to CPU timeout, start your deployment again. 
 
 * Once deployment is complete you will receive a confirmation in the bottom right hand side of Visual Studio Code similar to image below.  Select Browse Website to verify.  Make sure to include /swagger on the URL in order to get to the Swagger landing page.
 
