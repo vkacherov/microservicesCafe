@@ -10,6 +10,8 @@ import { OrderService } from '../order.service';
 
 export class OrderFormComponent {
   private returnMsg;
+  private orderPlacedMsg;
+
   constructor(private orderService: OrderService) {}
 
   model = this.orderService.getOrder();
@@ -19,6 +21,7 @@ export class OrderFormComponent {
   onSubmit() {
     this.submitted = true;
     this.returnMsg = this.orderService.addOrder(this.model).subscribe();
+    this.orderPlacedMsg = 'Thank you ' + this.model.name + '. Your order has been placed!';
     console.log(this.returnMsg);
   }
 

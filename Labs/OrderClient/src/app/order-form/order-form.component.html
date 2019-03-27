@@ -1,26 +1,30 @@
-<div class="container" [hidden]="submitted">
-    <h1>Order Form</h1>
-    <form (ngSubmit)="onSubmit()" #orderForm="ngForm">
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" class="form-control" id="name" required
-         [(ngModel)]="model.name" name="name">
-      </div>
+<div class="mscafe-order-view" align="center">
+  <div class="container" [hidden]="submitted">
+      <form (ngSubmit)="onSubmit()" #orderForm="ngForm" class="mscafe-form">
 
-      <div class="form-group">
-        <label for="alterEgo">Phone</label>
-        <input type="text" class="form-control" id="phone"
-          [(ngModel)]="model.phone" name="phone">
-      </div>
+        <mat-card class="mscafe-order-card">
+          <mat-card-title class="mscafe-title">Place Order</mat-card-title>
+          <mat-form-field class="mscafe-full-width">
+            <input matInput placeholder="Name" type="text" value="" required 
+              [(ngModel)]="model.name" name="name">
+          </mat-form-field>
+          
+          <mat-form-field class="mscafe-full-width">
+            <span matPrefix>+1 &nbsp;</span>
+            <input type="tel" matInput placeholder="Telephone" required
+              [(ngModel)]="model.phone" name="phone">
+          </mat-form-field>
 
-      <button type="submit" class="btn btn-success" [disabled]="!orderForm.form.valid">Submit</button>
+          <button type="submit" mat-raised-button color="primary" [disabled]="!orderForm.form.valid">Submit</button>
+        
+        </mat-card>
+      </form>
+  </div>
 
-    </form>
-</div>
-
-<div class="container" [hidden]="!submitted">
-  <h2>{{ returnMsg }}</h2>
-  
-  <br>
-  <button class="btn btn-primary" (click)="submitted=false">Continue</button>
+  <div class="container" [hidden]="!submitted">
+    <h2 class="mscafe-title">{{ orderPlacedMsg }}</h2>
+    
+    <br>
+    <button class="btn btn-primary" (click)="submitted=false">Continue</button>
+  </div>
 </div>
