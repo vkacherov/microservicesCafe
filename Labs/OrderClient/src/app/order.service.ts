@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Order } from './order';
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { HttpHeaders } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
-import { catchError, map, tap } from 'rxjs/operators';
+import { catchError } from 'rxjs/operators';
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -15,8 +15,6 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class OrderService {
-  private orderServiceUrl = 'https://microservecafe.azurewebsites.net/api/order';  // URL to web api
-
   /**
    * Handle Http operation that failed.
    * Let the app continue.
@@ -47,7 +45,7 @@ export class OrderService {
 
   addOrder (order: Order): Observable<Order> {
     console.log('Submitting order: ', order);
-    return this.http.post<Order>(this.orderServiceUrl, order, httpOptions)
+    return this.http.post<Order>(order['serviceUrl'], order, httpOptions)
       .pipe(
         catchError(this.handleError<Order>('addOrder', order))
       );

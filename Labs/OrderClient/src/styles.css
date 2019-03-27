@@ -1,10 +1,13 @@
 @import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
 @import '@angular/material/prebuilt-themes/indigo-pink.css';
 
+html, body
+{
+    height: 100%;
+}
 body {
     background-color: #fafafa;
 }
-
 .mscafe-fill-remaining-space {
   flex: 1 1 auto;
 }
@@ -23,6 +26,13 @@ body {
   padding-top: 80px;
   align-content: center;
   width: 100%;
+}
+.mscafe-side-container {
+  height: 100%;
+}
+.mscafe-side-drawer {
+  width: 350px;
+  padding: 80px 30px;
 }
 .mscafe-title {
   font-size: medium;
