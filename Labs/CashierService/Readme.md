@@ -107,9 +107,9 @@ In this section we'll deploy our newly created service to a new Azure Web App.  
 	* Expand your Web App in Visual Studio Code.  You may need to refresh your subscription first if it doesn't appear.
 	* Under Application Settings, add the following two keys with their corresponding values that we used earlier in our local appsettings.json file.
 
-	``` ApplicationSettings:QueueName ```
+		``` ApplicationSettings:QueueName ```
 	
-	``` ApplicationSettings:ServiceBusConnection ```
+		``` ApplicationSettings:ServiceBusConnection ```
 
 	<img src="./Images/Screen5.png" width="500px"/>
 
