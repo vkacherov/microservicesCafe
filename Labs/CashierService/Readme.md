@@ -97,7 +97,7 @@ In this section we'll deploy our newly created service to a new Azure Web App.  
 
 	``` az appservice plan create --name CashierServicePlan --resource-group microservicescafe --sku FREE -l eastus```
 
-* Create the web app.
+* Create the web app. Be sure to replace the ``` {initials} ``` with your initials in order to create a unique url for your web app.
 
 	``` az webapp create --name CashierService{initials} --resource-group microservicescafe --plan CashierServicePlan -l ```
 	
