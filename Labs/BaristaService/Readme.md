@@ -24,7 +24,26 @@
 ## Step-by-step 
 In this lab we will use the Azure Function App to implement the Barista Service. Azure Functions is a serverless compute service that enables you to run code on-demand without having to explicitly provision or manage infrastructure.
 
-Begin by opening the Visual Studio Code in an empty directory. Bring up the command palette (Ctrl+Shift+P) and type "Functions", the command palette will filter the list to show available comands for Azure Functions.
+Before we create the service we need to bootstrap the Azure resource:
+* Open a [Cloud Shell](shell.azure.com) session by navigating to http://shell.azure.com in your favorite browser. **Note:** If this is your first time in the Cloud Shell you will be prompted to create a storage account.
+* Now let's set some environment variable that we will use later
+
+```
+YOUR_UNIQUE_ID={replace with your id}
+```
+* Optionaly, if you are familiar with Linux text editors (e.g. vi), you can set this envronment variable permanent by adding it to `.profile` file in your home directory 
+
+* Now let's provision a storage account that will host out Function codebase:
+```bash
+az storage account create -n microservicesstore$YOUR_UNIQUE_ID --sku Standard_LRS -g microservecafe -l eastus
+```
+
+* Now we can create the Function App service using the newly created storage account:
+```bash
+az functionapp create -n microservecafe$YOUR_UNIQUE_ID -g microservecafe -s microservicesstore$YOUR_UNIQUE_ID --consumption-plan-location eastus
+```
+
+You should now have all the needed Azure resources to host our app, let's create it now. Begin by opening the Visual Studio Code in an empty directory. Bring up the command palette (Ctrl+Shift+P) and type "Functions", the command palette will filter the list to show available comands for Azure Functions.
 * Select "Create Function..." command and select the local directory (default) to create your function app. Since there is no Function project created yet, you will be asked to initialize it, click "Yes".
 * Next you will be asked to pick a language of choice, for this tutorial we will use JavaScript, but feel free to experiment with others. *Note: The code samples provided are JavaScript.* If you are prompted to select runtime, please pick Azure Functions v2.
 * The Azure Functions platform offers many templates to get started, since we want our code to execute when the new coffee order is placed in the "Pending Orders" queue, we will use Azure Service Bus Queue trigger.
