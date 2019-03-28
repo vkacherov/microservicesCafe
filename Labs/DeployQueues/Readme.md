@@ -24,10 +24,10 @@
   YOUR_UNIQUE_ID={replace with your id}
   ```
 * Optionaly, if you are familiar with Linux text editors (e.g. vi), you can set this envronment variable permanently by adding it to the `.profile` file in your home directory:
-```
-export RESOURCE_GROUP=misroservicesCafe
-export YOUR_UNIQUE_ID={replace with your id}
-```
+  ```
+  export RESOURCE_GROUP=misroservicesCafe
+  export YOUR_UNIQUE_ID={replace with your id}
+  ```
 * Save the file and run `source ~/.profile` 
  
 * If the CLI is installed, we will need to login the CLI into your Azure subscription. Follow the prompts after running the `login` command
