@@ -29,9 +29,11 @@
 ## Step-by-step 
 In this lab we will build and deploy the Cashier Service to an Azure Web App.  
 
-* If you haven't already cloned this repo to you local development environment, now is the time!  AT a command prompt enter:
+* If you haven't already cloned this repo to you local development environment, now is the time!  On your machine open a command prompt and enter:
 
-	``` git clone { Url to this github repo } ```
+	``` 
+	git clone https://github.com/vkacherov/microservicesCafe.git 
+	```
 
 * In VSCode, open the ```web-api``` folder found under the Labs/CashierService. 
 	* Note: VSCode may prompt you to restore packages associated with this service
@@ -44,7 +46,9 @@ In this lab we will build and deploy the Cashier Service to an Azure Web App.
 
 * If you receive a certificate error, this can be corrected by trusting the dotnet core development cert.  Running the following command will add the certificate to your local certificate store.
 
-	``` dotnet dev-certs https --trust ```
+	``` 
+	dotnet dev-certs https --trust 
+	```
 
 * Next, we'll add local settings files to allow for local debugging.
 	* In VSCode, add the following 2 files to the CashierService web-api
@@ -99,11 +103,15 @@ In this section we'll deploy our newly created service to a new Azure Web App.  
 
 * Create an App Service plan in the FREE tier.
 
-	``` az appservice plan create --name CashierServicePlan --resource-group $RESOURCE_GROUP --sku FREE -l eastus```
+	``` 
+	az appservice plan create --name CashierServicePlan --resource-group $RESOURCE_GROUP --sku FREE -l eastus
+	```
 
 * Create the web app with a unique url for your web app.
 
-	``` az webapp create --name CashierService$YOUR_UNIQUE_ID --resource-group $RESOURCE_GROUP --plan CashierServicePlan -l ```
+	``` 
+	az webapp create --name CashierService$YOUR_UNIQUE_ID --resource-group $RESOURCE_GROUP --plan CashierServicePlan -l 
+	```
 	
 	* Note the -l parameter in this command.  This option will enable local git deploy which is what we'll be doing for this lab.  For production use, it is recommended to use a DevOps platform for deployment.
 
@@ -111,9 +119,9 @@ In this section we'll deploy our newly created service to a new Azure Web App.  
 	* Expand your Web App in Visual Studio Code.  You may need to refresh your subscription first if it doesn't appear.
 	* Under Application Settings, add the following two keys with their corresponding values that we used earlier in our local appsettings.json file.
 
-		``` ApplicationSettings:QueueName ```
+		`ApplicationSettings:QueueName`
 	
-		``` ApplicationSettings:ServiceBusConnection ```
+		`ApplicationSettings:ServiceBusConnection`
 
 	<img src="./Images/Screen5.png" width="500px"/>
 
