@@ -8,4 +8,4 @@ This section contains a few ideas for expanding on what was done in the main lab
 * Add monitoring and alerting to the services track usage, faults and other application specific metrics.
 * Containerize the Cashier Service to run inside of Azure Kubernetes, Azure App Service or Azure Container Instance.
 * How would scaling be done in each of the services?  Implement an appropriate scale plan to handle large loads and also be cost effective.
-* Incorporate a resiliency plan to handle datacenter or regional outages.
+* Incorporate a resiliency plan to handle datacenter or regional outages, design patters like circuit breaker and other capabilities to make your services resilient.
