@@ -23,7 +23,7 @@
   RESOURCE_GROUP=misroservicesCafe
   YOUR_UNIQUE_ID={replace with your id}
   ```
-* Optionaly, if you are familiar with Linux text editors (e.g. vi), you can set this envronment variable permanently by adding it to the `.profile` file in your home directory:
+* Optionaly, if you are familiar with Linux text editors (e.g. vi), you can set this envronment variable permanently by adding it to the `.bashrc` file in your home directory:
   ```
   export RESOURCE_GROUP=misroservicesCafe
   export YOUR_UNIQUE_ID={replace with your id}
