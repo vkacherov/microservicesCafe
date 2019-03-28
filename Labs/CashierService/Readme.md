@@ -31,7 +31,7 @@ In this lab we will build and deploy the Cashier Service to an Azure Web App.
 
 * If you haven't already cloned this repo to you local development environment, now is the time!  AT a command prompt enter:
 
-``` git clone { Url to this github repo } ```
+	``` git clone { Url to this github repo } ```
 
 * In VSCode, open the ```web-api``` folder found under the Labs/CashierService. 
 	* Note: VSCode may prompt you to restore packages associated with this service
