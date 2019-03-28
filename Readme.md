@@ -26,8 +26,9 @@ There are several things you will need before starting this lab:
 Either an existing Azure subscription you have access to (with ‘contributor’ rights) or Azure Pass or free account. 
 **Note:** If you activate an Azure Pass do not use your company/work email address
 
-* Visual Studio Code
-* Azure CLI
+* [Visual Studio Code](https://code.visualstudio.com/)
+* [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
+* [Git](https://git-scm.com/downloads) 
 
 ## Hands-on Labs
 
