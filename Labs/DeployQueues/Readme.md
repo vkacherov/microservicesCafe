@@ -44,7 +44,7 @@
   ```
 * Create a Service Namespace
   ```
-  az servicebus namespace create --resource-group $RESOURCE_GROUP --name microservicescafe --location eastus --sku Standard
+  az servicebus namespace create --resource-group $RESOURCE_GROUP --name microservicescafe$YOUR_UNIQUE_ID --location eastus --sku Standard
   ```
 * Now that we have a namespace lets create the "Pending Orders" and "Completed Orders" queues
   ```
