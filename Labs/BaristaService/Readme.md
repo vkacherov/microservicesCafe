@@ -25,15 +25,9 @@
 In this lab we will use the Azure Function App to implement the Barista Service. Azure Functions is a serverless compute service that enables you to run code on-demand without having to explicitly provision or manage infrastructure.
 
 Before we create the service we need to bootstrap the Azure resource:
-* Open a [Cloud Shell](shell.azure.com) session by navigating to http://shell.azure.com in your favorite browser. **Note:** If this is your first time in the Cloud Shell you will be prompted to create a storage account.
-* Now let's set some environment variable that we will use later
+* Open a [Cloud Shell](shell.azure.com) session by navigating to http://shell.azure.com in your favorite browser. 
 
-```
-YOUR_UNIQUE_ID={replace with your id}
-```
-* Optionaly, if you are familiar with Linux text editors (e.g. vi), you can set this envronment variable permanent by adding it to `.profile` file in your home directory 
-
-* Now let's provision a storage account that will host out Function codebase:
+* First let's provision a storage account that will host out Function codebase:
 ```bash
 az storage account create -n microservicesstore$YOUR_UNIQUE_ID --sku Standard_LRS -g microservecafe -l eastus
 ```
