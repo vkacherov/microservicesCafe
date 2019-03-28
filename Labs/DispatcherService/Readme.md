@@ -47,7 +47,8 @@ In this lab we will use the Azure Logic App to implement the Dispatcher Service.
   ```
   - In this step we will configure a task to send an SMS text message back to the customer using [Twilio](http://twilio.com) plugin. Add a Twilio task for "Sending a text message (SMS)".
   - You will be required to create a new connection to your Twilio account. Give it a unique name and Twilio Account ID/Token (from the [Twilio](http://twilio.com) portal):
-<img src="./Images/configureTwilio.png" width="400px">
+  <img src="./Images/configureTwilio.png" width="400px"/>
+  
   - Use the Dynamic Content helper to inject name and phone number.
   - Click Save, your Logic App Flow is now ready to process requests.  
 <img src="./Images/createLogicAppFlow.gif" width="100%"/>
