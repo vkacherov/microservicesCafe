@@ -28,7 +28,7 @@
   export RESOURCE_GROUP=misroservicesCafe
   export YOUR_UNIQUE_ID={replace with your id}
   ```
-* Save the file and run `source ~/.profile` 
+* Save the file and run `source ~/.bashrc` 
  
 * If the CLI is installed, we will need to login the CLI into your Azure subscription. Follow the prompts after running the `login` command
   ```
