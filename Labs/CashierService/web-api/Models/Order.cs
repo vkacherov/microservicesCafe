@@ -11,6 +11,7 @@ namespace CashierServices.Models
         public Guid orderid { get; set; } 
         [Required]
         public string name { get; set; }
+        [Required]
         public string phone { get; set; }
         public string status { get; set; }
         public DateTime orderdate {get; set;}
