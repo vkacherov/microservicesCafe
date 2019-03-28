@@ -14,6 +14,7 @@ The application you'll be building will allow the users to order a cup of coffee
 * <a href="https://docs.microsoft.com/en-us/azure/azure-functions/">Azure Functions</a>
 * <a href="https://docs.microsoft.com/en-us/azure/logic-apps">Azure Logic Apps</a>
 * <a href="https://docs.microsoft.com/en-us/azure/service-bus-messaging">Azure Service Bus</a>
+* <a href="./ReferenceLinks/Readme.md">Other Resource Links</a>
 
 ## Architecture
 
