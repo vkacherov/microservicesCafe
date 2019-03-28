@@ -30,11 +30,7 @@
   ```
 * Save the file and run `source ~/.bashrc` 
  
-* If the CLI is installed, we will need to login the CLI into your Azure subscription. Follow the prompts after running the `login` command
-  ```
-  az login
-  ```
- * If you have more than one subscription, the command below will allow you to set a specific subscription to deploy new resources.
+* If you have more than one subscription, the command below will allow you to set a specific subscription to deploy new resources.
    ```
    az account set --subscription {subscription id or name}
    ```
