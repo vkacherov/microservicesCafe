@@ -19,10 +19,10 @@
   ```
 * Now let's set some environment variable that we will use later
 
-```
-RESOURCE_GROUP=misroservicesCafe
-YOUR_UNIQUE_ID={replace with your id}
-```
+  ```
+  RESOURCE_GROUP=misroservicesCafe
+  YOUR_UNIQUE_ID={replace with your id}
+  ```
 * Optionaly, if you are familiar with Linux text editors (e.g. vi), you can set this envronment variable permanent by adding it to `.profile` file in your home directory 
  
 * If the CLI is installed, we will need to login the CLI into your Azure subscription. Follow the prompts after running the `login` command
