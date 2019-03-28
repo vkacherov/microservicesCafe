@@ -48,7 +48,7 @@ You should now have all the needed Azure resources to host our app, let's create
 
 <img src="./Images/createFunction.gif" width="100%"/>
 
-* We now have a basic function that will be triggered when there are new messages added to the "Panding Orders" queue. You can test your function by running it locally in the VS Code:
+* We now have a basic function that will be triggered when there are new messages added to the "Pending Orders" queue. You can test your function by running it locally in the VS Code:
 
 <img src="./Images/vscodeFunctionDebug.png" width="100%"/>
 
