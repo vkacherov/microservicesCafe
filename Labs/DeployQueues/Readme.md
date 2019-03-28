@@ -11,7 +11,7 @@
   
 ## Step-by-step 
 
-* We will using the Azure CLI to create the required Azure resources. We will use [Cloud Shell](shell.azure.com) for this. Open a new C;oud Shell session by navigating to http://shell.azure.com in your favorite browser. **Note:** If this is your first time in the Cloud Shell you will be prompted to create a storage account.
+* We will using the Azure CLI to create the required Azure resources. We will use [Cloud Shell](shell.azure.com) for this. Open a new Cloud Shell session by navigating to http://shell.azure.com in your favorite browser. **Note:** If this is your first time in the Cloud Shell you will be prompted to create a storage account.
   
 * Verify that the Azure CLI is installed by running:
    ```
