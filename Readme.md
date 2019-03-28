@@ -39,4 +39,4 @@ Either an existing Azure subscription you have access to (with ‘contributor’
 
 * <a href="./Labs/DispatcherService/Readme.md" class="myButton">Dispatcer Service and Azure Logic Apps</a>
 
-* <a href="./Labs/OptionalExersices/Readme.md" class="myButton">Optional Exercises</a>
+* <a href="/Labs/OptionalExercises/Readme.md" class="myButton">Optional Exercises</a>
