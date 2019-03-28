@@ -91,15 +91,15 @@ In this lab we will build and deploy the Cashier Service to an Azure Web App.
 
 ## Deploying to Azure
 
-In this section we'll deploy our newly created service to a new Azure Web App.  We will be using the Azure CLI for this exercise.  It is also possible to perform this operation from the Azure Portal.
+In this section we'll deploy our newly created service to a new Azure Web App.  We will be using the Azure CLI for this exercise. Open a Cloud Shell session by navigating to http://shell.azure.com in your favorite browser.
 
 * Create an App Service plan in the FREE tier.
 
-	``` az appservice plan create --name CashierServicePlan --resource-group microservicescafe --sku FREE -l eastus```
+	``` az appservice plan create --name CashierServicePlan --resource-group $RESOURCE_GROUP --sku FREE -l eastus```
 
-* Create the web app. Be sure to replace the ``` {initials} ``` with your initials in order to create a unique url for your web app.
+* Create the web app with a unique url for your web app.
 
-	``` az webapp create --name CashierService{initials} --resource-group microservicescafe --plan CashierServicePlan -l ```
+	``` az webapp create --name CashierService$YOUR_UNIQUE_ID --resource-group $RESOURCE_GROUP --plan CashierServicePlan -l ```
 	
 	* Note the -l parameter in this command.  This option will enable local git deploy which is what we'll be doing for this lab.  For production use, it is recommended to use a DevOps platform for deployment.
 
