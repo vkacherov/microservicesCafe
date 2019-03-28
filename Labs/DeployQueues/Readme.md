@@ -48,12 +48,12 @@
   ```
 * Now that we have a namespace lets create the "Pending Orders" and "Completed Orders" queues
   ```
-  az servicebus queue create --resource-group $RESOURCE_GROUP --namespace-name microservicescafe --name pendingorders
-  az servicebus queue create --resource-group $RESOURCE_GROUP --namespace-name microservicescafe --name completedorders
+  az servicebus queue create --resource-group $RESOURCE_GROUP --namespace-name microservicescafe$YOUR_UNIQUE_ID --name pendingorders
+  az servicebus queue create --resource-group $RESOURCE_GROUP --namespace-name microservicescafe$YOUR_UNIQUE_ID --name completedorders
   ``` 
 * Lastly, we need to retrive a connection string for our newly created Azure Service Bus, we will need it later.
   ```
-  az servicebus namespace authorization-rule keys list --resource-group $RESOURCE_GROUP --namespace-name microservicescafe -n RootManageSharedAccessKey
+  az servicebus namespace authorization-rule keys list --resource-group $RESOURCE_GROUP --namespace-name microservicescafe$YOUR_UNIQUE_ID -n RootManageSharedAccessKey
   ```
 
 ## Next Steps
