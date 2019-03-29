@@ -60,10 +60,10 @@ Next we will add the configuration for the "Completed Orders" queue:
       "type": "serviceBus",
       "direction": "out",
       "connection": "ORDER_QUEUE_CONNECTION",
-      "queueName": "completedordersqueue"
+      "queueName": "completedorders"
   }
   ```
-  *Note: Since we are using the same Service Bus for both queues ("completed" and "pending" orders), the connection setting will be the same for both.*
+  *Note: Since we are using the same Service Bus for both queues ("completed" and "pending" orders), the connection setting will be the same for both. Check to make sure the ORDER_QUEUE_CONNECTION is set in the `local.settings.json`*
 * We also need to configure the Service Bus trigger to immediately mark as complete. Open the `host.json` file and make sure `autoComplete: true`. Your file should look like this:
   ```
   {
