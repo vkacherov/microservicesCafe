@@ -30,6 +30,7 @@ Either an existing Azure subscription you have access to (with ‘contributor’
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
 * [Git](https://git-scm.com/downloads) 
+* [NodeJs 10+](https://nodejs.org/en/)
 
 ## Hands-on Labs
 
