@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Azure.ServiceBus;
 using CashierServices.Contracts;
 using CashierServices.Models;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
-using System.Text;
+
 
 namespace CashierServices.Controllers
 {
