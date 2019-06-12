@@ -91,7 +91,7 @@ In this lab we will build and deploy the Cashier Service to an Azure Web App.
 
 * Create a Shared access policy with Send claims and copy the connection string to your appsettings.json file.
 
-* In the settings.json file, replace the QueueName with `pendingordersqueue`
+* In the settings.json file, replace the QueueName with `pendingorders`
 
 * If all went well, you should be able to hit F5 and launch the api.  From the swagger screen you can post a new order to the service.
 
