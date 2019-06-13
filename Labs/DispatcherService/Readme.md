@@ -35,7 +35,7 @@ In this lab we will use the Azure Logic App to implement the Dispatcher Service.
 
 - Now that we have a Logic App, let's create a flow that will be triggered by a new message arriving in the "CompletedOrdersQueue" and send an SMS message to the user.  
   - Select "When a messge is received in a Service Bus queue" card on the Logic Apps Designer screen. 
-  - Configure the Service Bus connector task by selecting the "completedordersqueue" from dropdown and changing the polling time to 3 seconds.
+  - Configure the Service Bus connector task by selecting the "completedorders" from dropdown and changing the polling time to 3 seconds.
   - Add a task to decode and parse the Service Bus message by searching for "Parse JSON" and adding "Dynamic Content" Expression of `base64toString(Content)`
   - Add the schema by using the following sample payload
   ```
