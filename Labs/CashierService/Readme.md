@@ -15,7 +15,7 @@
 
 * <a href="https://docs.microsoft.com/en-us/azure/service-bus-messaging">Azure Service Bus</a>
 * <a href="https://docs.microsoft.com/en-us/azure/app-service">Azure App Services</a>
-* <a href="https://docs.microsoft.com/en-us/dotnet/core/whats-new/dotnet-core-2-2">.Net Core 2.2</a>
+* <a href="https://dotnet.microsoft.com/download/dotnet-core/2.2">.Net Core 2.2</a>
 * <a href="https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-2.2&tabs=visual-studio">Swashbuckle for OpenAPI</a>
 
 ## Prerequisites
