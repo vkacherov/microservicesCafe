@@ -20,13 +20,13 @@
 * Now let's set some environment variable that we will use later
 
   ```
-  RESOURCE_GROUP=misroservicesCafe
-  YOUR_UNIQUE_ID={replace with your id}
+  RESOURCE_GROUP=misroservicesCafe$guid
+  YOUR_UNIQUE_ID=$guid
   ```
 * Optionaly, if you are familiar with Linux text editors (e.g. vi), you can set this envronment variable permanently by adding it to the `.bashrc` file in your home directory:
   ```
-  export RESOURCE_GROUP=misroservicesCafe
-  export YOUR_UNIQUE_ID={replace with your id}
+  export RESOURCE_GROUP=misroservicesCafe$guid
+  export YOUR_UNIQUE_ID=$guid
   ```
 * Save the file and run `source ~/.bashrc` 
  
