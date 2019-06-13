@@ -31,6 +31,7 @@ Either an existing Azure subscription you have access to (with ‘contributor’
 * [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
 * [Git](https://git-scm.com/downloads) 
 * [NodeJs 10+](https://nodejs.org/en/)
+* [Dotnet Core 2.2 or higher SDK](https://dotnet.microsoft.com/download/dotnet-core/2.2)
 
 ## Hands-on Labs
 
