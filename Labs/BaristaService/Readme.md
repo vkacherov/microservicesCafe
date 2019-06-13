@@ -43,7 +43,7 @@ You should now have all the needed Azure resources to host our app, let's create
 * The Azure Functions platform offers many templates to get started, since we want our code to execute when the new coffee order is placed in the "Pending Orders" queue, we will use Azure Service Bus Queue trigger.
 * Give your function a unique name (e.g. ProcessOrder or BaristaService)
 * Now we need to specify the Service Bus service we will be working with. Select "+ New App Setting" and select the Service Bus name from the drop-down.
-* Next we need to specify the Queue name we will be monitoring, select "pendingordersqueue".
+* Next we need to specify the Queue name we will be monitoring, select "pendingorders".
 * Lastly, you will be asked to select a Storage Account to use, select the default from the drop-down.
 
 <img src="./Images/createFunction.gif" width="100%"/>
