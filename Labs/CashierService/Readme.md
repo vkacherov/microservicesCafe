@@ -53,7 +53,7 @@ In this lab we will build and deploy the Cashier Service to an Azure Web App.
 * Next, we'll add local settings files to allow for local debugging.
 	* In VSCode, add the following 2 files to the CashierService web-api
 		* appsettings.json
-		* appsettings.Development.json
+		* Optional: appsettings.Development.json
 
 * Open the appsettings.json file and insert the following json:
 ```json
@@ -71,7 +71,7 @@ In this lab we will build and deploy the Cashier Service to an Azure Web App.
     }
 ```
 
-   * Open the appsettings.Development.json file and insert the following json:
+   * Optional: Open the appsettings.Development.json file and insert the following json:
   
 ```json
     {
